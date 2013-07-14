@@ -9,95 +9,95 @@
 # human readable description.
 
 # rules tags
-backups-preceding-slashes :: Backup entries should not have preceding slashes
-cross-dir-hardlink %s %s :: Cross-directory hardlink in package (%s, %s)
-dangling-hardlink %s points to %s :: Hard link (%s) points to non-existing %s
-dangling-symlink %s points to %s :: Symlink (%s) points to non-existing %s
-dconf-schemas-not-compiled :: Files in /usr/share/glib-2.0/schemas but no call for glib-compile-schemas in install file
-desktop-database-not-updated :: Mime type handler found. Add "update-desktop-database -q" to the install file
+backups-preceding-slashes :: Backup entries should not have preceding slashes.
+cross-dir-hardlink %s %s :: Cross-directory hardlink in package (%s, %s).
+dangling-hardlink %s points to %s :: Hard link (%s) points to non-existing %s.
+dangling-symlink %s points to %s :: Symlink (%s) points to non-existing %s.
+dconf-schemas-not-compiled :: Files in /usr/share/glib-2.0/schemas but no call for glib-compile-schemas in install file.
+desktop-database-not-updated :: Mime type handler found. Add "update-desktop-database -q" to the install file.
 directory-not-world-executable %s :: Directory (%s) does not have the world executable bit set.
 elffile-in-any-package %s :: ELF file ('%s') found in an 'any' package.
 elffile-not-in-allowed-dirs %s :: ELF file ('%s') outside of a valid path.
 elffile-with-execstack %s :: ELF file ('%s') has executable stack.
 elffile-with-textrel %s :: ELF file ('%s') has text relocations.
-empty-directory %s :: Directory (%s) is empty
-error-running-rule %s :: Error running rule '%s'
-extra-var-begins-without-underscore %s :: Non standard variable '%s' doesn't start with an underscore
+empty-directory %s :: Directory (%s) is empty.
+error-running-rule %s :: Error running rule '%s'.
+extra-var-begins-without-underscore %s :: Non standard variable '%s' doesn't start with an underscore.
 file-in-non-standard-dir %s :: File (%s) exists in a non-standard directory.
 file-in-temporary-dir %s :: File (%s) is in a temporary directory.
 file-not-world-readable %s :: File (%s) does not have the world readable bit set.
-file-referred-in-startdir :: File referenced in $startdir
+file-referred-in-startdir :: File referenced in $startdir.
 file-setugid %s :: File (%s) is setuid or setgid.
 file-world-writable %s :: File (%s) has the world writable bit set.
 gio-modules-not-registered :: Package installs GIO modules but does not register them with gio-querymodules in install script.
-gnome-mime-file %s :: File (%s) is an auto-generated GNOME mime file
-hardlink-found %s points to %s :: Hard link (%s) found that points to %s
-hicolor-icon-cache-not-updated :: Files in /usr/share/icons/hicolor but no call to gtk-update-icon-cache or xdg-icon-resource to update the icon cache
-improper-checksum %s %s :: Improper %s: '%s'
-incorrect-library-permissions %s :: Library (%s) does not have permission set to 644 or 444
-incorrect-owner %s (%s:%s) :: File (%s) is owned by %s:%s
-info-dir-file-present %s :: Info directory file (%s) should not be present
-info-dir-not-updated :: Info files detected but not updated with "install-info" in install file
-insecure-rpath %s %s :: Insecure RPATH '%s' in file ('%s')
-invalid-filename :: File name %s contains non standard characters
-kdebase-runtime-needed-dep %s :: KDE programs %s probably need kdebase-runtime to run correctly
-library-no-package-associated %s :: Referenced library '%s' is an uninstalled dependency
-libtool-file-present %s :: File (%s) is a libtool file
-link-level-dependence %s in %s :: Link-level dependence (%s) in file %s
-lots-of-docs %f :: Package was %.0f%% docs by size; maybe you should split out a docs package
-mime-cache-not-updated :: Mime-file found. Add "update-mime-database usr/share/mime" to the install file
-missing-backup-file %s :: File in backup array (%s) not found in package
-missing-checksums :: Missing checksums
-missing-contributor :: Missing Contributor tag
-missing-custom-license-dir usr/share/licenses/%s :: Missing custom license directory (usr/share/licenses/%s)
-missing-custom-license-file usr/share/licenses/%s/* :: Missing custom license file in package (usr/share/licenses/%s/*)
-missing-license :: Missing license
-missing-maintainer :: Missing Maintainer tag
-missing-makedeps %s :: Split PKGBUILD needs additional makedepends %s to work properly
-missing-pkgfunction %s :: Child package %s does not have a valid package() function
-missing-url :: Missing url
-no-elffiles-not-any-package :: No ELF files and not an "any" package
+gnome-mime-file %s :: File (%s) is an auto-generated GNOME mime file.
+hardlink-found %s points to %s :: Hard link (%s) found that points to %s.
+hicolor-icon-cache-not-updated :: Files in /usr/share/icons/hicolor but no call to gtk-update-icon-cache or xdg-icon-resource to update the icon cache.
+improper-checksum %s %s :: Improper %s: '%s'.
+incorrect-library-permissions %s :: Library (%s) does not have permission set to 644 or 444.
+incorrect-owner %s (%s:%s) :: File (%s) is owned by %s:%s.
+info-dir-file-present %s :: Info directory file (%s) should not be present.
+info-dir-not-updated :: Info files detected but not updated with "install-info" in install file.
+insecure-rpath %s %s :: Insecure RPATH '%s' in file ('%s').
+invalid-filename :: File name %s contains non standard characters.
+kdebase-runtime-needed-dep %s :: KDE programs %s probably need kdebase-runtime to run correctly.
+library-no-package-associated %s :: Referenced library '%s' is an uninstalled dependency.
+libtool-file-present %s :: File (%s) is a libtool file.
+link-level-dependence %s in %s :: Link-level dependence (%s) in file %s.
+lots-of-docs %f :: Package was %.0f%% docs by size; maybe you should split out a docs package.
+mime-cache-not-updated :: Mime-file found. Add "update-mime-database usr/share/mime" to the install file.
+missing-backup-file %s :: File in backup array (%s) not found in package.
+missing-checksums :: Missing checksums.
+missing-contributor :: Missing Contributor tag.
+missing-custom-license-dir usr/share/licenses/%s :: Missing custom license directory (usr/share/licenses/%s).
+missing-custom-license-file usr/share/licenses/%s/* :: Missing custom license file in package (usr/share/licenses/%s/*).
+missing-license :: Missing license.
+missing-maintainer :: Missing Maintainer tag.
+missing-makedeps %s :: Split PKGBUILD needs additional makedepends %s to work properly.
+missing-pkgfunction %s :: Child package %s does not have a valid package() function.
+missing-url :: Missing url.
+no-elffiles-not-any-package :: No ELF files and not an "any" package.
 no-groups :: No groups specified.
-non-fhs-info-page %s :: Non-FHS info page (%s) found. Use /usr/share/info instead
-non-fhs-man-page %s :: Non-FHS man page (%s) found. Use /usr/share/man instead
-not-a-common-license %s :: %s is not a common license (it's not in /usr/share/licenses/common/)
-not-enough-checksums %s %i needed :: Not enough %s: %i needed
-package-name-in-uppercase :: No upper case letters in package names
+non-fhs-info-page %s :: Non-FHS info page (%s) found. Use /usr/share/info instead.
+non-fhs-man-page %s :: Non-FHS man page (%s) found. Use /usr/share/man instead.
+not-a-common-license %s :: %s is not a common license (it's not in /usr/share/licenses/common/).
+not-enough-checksums %s %i needed :: Not enough %s: %i needed.
+package-name-in-uppercase :: No upper case letters in package names.
 perllocal-pod-present %s :: perllocal.pod found in %s.
 pkgname-in-description :: Description should not contain the package name.
 potential-non-fhs-info-page %s :: Potential non-FHS info page (%s) found.
 potential-non-fhs-man-page %s :: Potential non-FHS man page (%s) found.
-script-link-detected %s in %s :: Script link detected (%s) in file %s
+script-link-detected %s in %s :: Script link detected (%s) in file %s.
 scrollkeeper-dir-exists %s :: Scrollkeeper directory exists (%s). Remember to not run scrollkeeper till post_{install,upgrade,remove}.
 site-ruby :: Found usr/lib/ruby/site_ruby in package, usr/lib/ruby/vendor_ruby should be used instead.
-specific-host-type-used %s :: Reference to %s should be changed to $CARCH
-specific-sourceforge-mirror :: Attempting to use specific sourceforge mirror, use downloads.sourceforge.net instead
-symlink-found %s points to %s :: Symlink (%s) found that points to %s
-too-many-checksums %s %i needed :: Too many %s: %i needed
-use-pkgdir :: Use $pkgdir instead of $startdir/pkg
-use-srcdir :: Use $srcdir instead of $startdir/src
-using-dl-sourceforge :: Attempting to use dl sourceforge domain, use downloads.sourceforge.net instead
+specific-host-type-used %s :: Reference to %s should be changed to $CARCH.
+specific-sourceforge-mirror :: Attempting to use specific sourceforge mirror, use downloads.sourceforge.net instead.
+symlink-found %s points to %s :: Symlink (%s) found that points to %s.
+too-many-checksums %s %i needed :: Too many %s: %i needed.
+use-pkgdir :: Use $pkgdir instead of $startdir/pkg.
+use-srcdir :: Use $srcdir instead of $startdir/src.
+using-dl-sourceforge :: Attempting to use dl sourceforge domain, use downloads.sourceforge.net instead.
 variable-not-array %s :: Variable %s is not an array.
 not-in-primary-group (%s) :: Not in '%s' group.
 group-invalid %s :: Not a blackarch group: %s.
 not-enough-secondary-groups %s :: Not enough secondary groups (should have at least %s).
 
 # dependency tags
-dependency-already-satisfied %s :: Dependency %s included but already satisfied
-dependency-covered-by-link-dependence %s :: Dependency covered by dependencies from link dependence (%s)
-dependency-detected-not-included %s (%s) :: Dependency %s detected and not included (%s)
-dependency-detected-but-optional %s (%s) :: Dependency %s detected but optional (%s)
-dependency-is-testing-release %s :: Dependency '%s' on your system is a testing release
-dependency-not-needed %s :: Dependency included and not needed ('%s')
-depends-by-namcap-sight depends=(%s) :: Depends as namcap sees them: depends=(%s)
+dependency-already-satisfied %s :: Dependency %s included but already satisfied.
+dependency-covered-by-link-dependence %s :: Dependency covered by dependencies from link dependence (%s).
+dependency-detected-not-included %s (%s) :: Dependency %s detected and not included (%s).
+dependency-detected-but-optional %s (%s) :: Dependency %s detected but optional (%s).
+dependency-is-testing-release %s :: Dependency '%s' on your system is a testing release.
+dependency-not-needed %s :: Dependency included and not needed ('%s').
+depends-by-namcap-sight depends=(%s) :: Depends as namcap sees them: depends=(%s).
 
 # dependency reasons
-dconf-needed-for-glib-schemas :: needed for glib schemas
-glib2-needed-for-gio-modules :: needed for GIO modules
-hicolor-icon-theme-needed-for-hicolor-dir :: needed for hicolor theme hierarchy
-shared-mime-info-needed :: needed for update-mime-database
-desktop-file-utils-needed :: needed for update-desktop-database
-kdebase-runtime-needed %s :: needed for programs %s
-java-environment-needed %s :: found class files %s
-libraries-needed %s %s :: libraries %s needed in files %s
-programs-needed %s %s :: programs %s needed in scripts %s
+dconf-needed-for-glib-schemas :: needed for glib schemas.
+glib2-needed-for-gio-modules :: needed for GIO modules.
+hicolor-icon-theme-needed-for-hicolor-dir :: needed for hicolor theme hierarchy.
+shared-mime-info-needed :: needed for update-mime-database.
+desktop-file-utils-needed :: needed for update-desktop-database.
+kdebase-runtime-needed %s :: needed for programs %s.
+java-environment-needed %s :: found class files %s.
+libraries-needed %s %s :: libraries %s needed in files %s.
+programs-needed %s %s :: programs %s needed in scripts %s.
