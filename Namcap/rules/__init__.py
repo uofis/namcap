@@ -53,6 +53,7 @@ from . import (
 from . import (
   arrays,
   badbackups,
+  blackarchgroups,
   carch,
   extravars,
   invalidstartdir,

@@ -18,8 +18,8 @@ desktop-database-not-updated :: Mime type handler found. Add "update-desktop-dat
 directory-not-world-executable %s :: Directory (%s) does not have the world executable bit set.
 elffile-in-any-package %s :: ELF file ('%s') found in an 'any' package.
 elffile-not-in-allowed-dirs %s :: ELF file ('%s') outside of a valid path.
-elffile-with-textrel %s :: ELF file ('%s') has text relocations.
 elffile-with-execstack %s :: ELF file ('%s') has executable stack.
+elffile-with-textrel %s :: ELF file ('%s') has text relocations.
 empty-directory %s :: Directory (%s) is empty
 error-running-rule %s :: Error running rule '%s'
 extra-var-begins-without-underscore %s :: Non standard variable '%s' doesn't start with an underscore
@@ -33,30 +33,31 @@ gio-modules-not-registered :: Package installs GIO modules but does not register
 gnome-mime-file %s :: File (%s) is an auto-generated GNOME mime file
 hardlink-found %s points to %s :: Hard link (%s) found that points to %s
 hicolor-icon-cache-not-updated :: Files in /usr/share/icons/hicolor but no call to gtk-update-icon-cache or xdg-icon-resource to update the icon cache
-kdebase-runtime-needed-dep %s :: KDE programs %s probably need kdebase-runtime to run correctly
 improper-checksum %s %s :: Improper %s: '%s'
 incorrect-library-permissions %s :: Library (%s) does not have permission set to 644 or 444
 incorrect-owner %s (%s:%s) :: File (%s) is owned by %s:%s
-invalid-filename :: File name %s contains non standard characters
 info-dir-file-present %s :: Info directory file (%s) should not be present
 info-dir-not-updated :: Info files detected but not updated with "install-info" in install file
 insecure-rpath %s %s :: Insecure RPATH '%s' in file ('%s')
-libtool-file-present %s :: File (%s) is a libtool file
+invalid-filename :: File name %s contains non standard characters
+kdebase-runtime-needed-dep %s :: KDE programs %s probably need kdebase-runtime to run correctly
 library-no-package-associated %s :: Referenced library '%s' is an uninstalled dependency
+libtool-file-present %s :: File (%s) is a libtool file
 link-level-dependence %s in %s :: Link-level dependence (%s) in file %s
 lots-of-docs %f :: Package was %.0f%% docs by size; maybe you should split out a docs package
 mime-cache-not-updated :: Mime-file found. Add "update-mime-database usr/share/mime" to the install file
 missing-backup-file %s :: File in backup array (%s) not found in package
+missing-checksums :: Missing checksums
 missing-contributor :: Missing Contributor tag
 missing-custom-license-dir usr/share/licenses/%s :: Missing custom license directory (usr/share/licenses/%s)
 missing-custom-license-file usr/share/licenses/%s/* :: Missing custom license file in package (usr/share/licenses/%s/*)
 missing-license :: Missing license
 missing-maintainer :: Missing Maintainer tag
-missing-checksums :: Missing checksums
-missing-url :: Missing url
-missing-pkgfunction %s :: Child package %s does not have a valid package() function
 missing-makedeps %s :: Split PKGBUILD needs additional makedepends %s to work properly
+missing-pkgfunction %s :: Child package %s does not have a valid package() function
+missing-url :: Missing url
 no-elffiles-not-any-package :: No ELF files and not an "any" package
+no-groups :: No groups specified.
 non-fhs-info-page %s :: Non-FHS info page (%s) found. Use /usr/share/info instead
 non-fhs-man-page %s :: Non-FHS man page (%s) found. Use /usr/share/man instead
 not-a-common-license %s :: %s is not a common license (it's not in /usr/share/licenses/common/)
@@ -77,6 +78,9 @@ use-pkgdir :: Use $pkgdir instead of $startdir/pkg
 use-srcdir :: Use $srcdir instead of $startdir/src
 using-dl-sourceforge :: Attempting to use dl sourceforge domain, use downloads.sourceforge.net instead
 variable-not-array %s :: Variable %s is not an array.
+not-in-primary-group (%s) :: Not in '%s' group.
+group-invalid %s :: Not a blackarch group: %s.
+not-enough-secondary-groups %s :: Not enough secondary groups (should have at least %s).
 
 # dependency tags
 dependency-already-satisfied %s :: Dependency %s included but already satisfied
