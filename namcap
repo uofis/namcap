@@ -1,29 +1,28 @@
 #!/bin/bash
 
-args=''
 tmp=$(mktemp -d --tmpdir namcap.XXXXXXXXXX)
 cleanup() {
-	rm -rf "${tmp}"
+	rm -rf "$tmp"
 }
-trap 'cleanup' 0
+trap 'cleanup' EXIT
 
-for arg in "${@}"; do
-	if echo "${arg}" | grep -q -E "^.+\.pkg\.tar\..+$" && [ -f "${arg}" ]; then
-
+args=()
+for arg ; do
+	if echo "$arg" | grep -q -E "^.+\.pkg\.tar\..+$" && [[ -f "$arg" ]] ; then
 		case "${arg##*.}" in
 			gz|z|Z) cmd='gzip' ;;
 			bz2|bz) cmd='bzip2' ;;
 			xz)     cmd='xz' ;;
-			*)      echo 'Unsupported compression'; exit 1;;
+			*)      echo 'Unsupported compression'; exit 1 ;;
 		esac
 
-		tar="${tmp}/$(basename "${arg%.*}")"
-		$cmd -dcf "${arg}" > "${tar}"
+		tar="$tmp/$(basename "${arg%.*}")"
+		$cmd -dcf "$arg" > "$tar"
 
-		args="${args} ${tar}"
+		args+=("$tar")
 	else
-		args="${args} ${arg}"
+		args+=("$arg")
 	fi
 done
 
-/usr/bin/env python3 -m namcap ${args}
+/usr/bin/env python3 -m namcap "${args[@]}"
