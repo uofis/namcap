@@ -28,8 +28,9 @@ class BlackarchGroupsRule(PkgbuildRule):
 	def analyze(self, pkginfo, tar):
 		primary_group = 'blackarch'
 		secondary_groups = ['blackarch-analysis', 'blackarch-exploitation',
-		      'blackarch-forensics', 'blackarch-intel', 'blackarch-misc',
-		      'blackarch-post', 'blackarch-threat-model']
+		      'blackarch-forensics', 'blackarch-intel', 'blackarch-defensive',
+		      'blackarch-threat-model', 'blackarch-web-apps', 'blackarch-password-attacks',
+		      'blackarch-wireless', 'blackarch-stress-testing', 'blackarch-reversing']
 		nsecondary_needed = 1
 
 		has_groups = False
